@@ -1,6 +1,7 @@
 reviews:
-  auto_review: true
-
+  auto_review:
+    enabled: true
+    
 path_filters:
   include:
     - "src/**/*.java"
