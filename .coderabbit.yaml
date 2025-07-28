@@ -1,22 +1,15 @@
 reviews:
-  profile: chill
-  request_changes_workflow: false
-  high_level_summary: true
-  poem: true
-  review_status: true
-  collapse_empty_files: true
-  auto_review:
-    enabled: true
-    ignore_title_keywords:
-      - "WIP"
-      - "Draft"
-    drafts: false
-  path_filters:
-    - "!**/*.generated.java"
-    - "!**/target/**"
-    - "!**/.mvn/**"
-language:
-  java:
-    level: advanced
-chat:
-  auto_reply: true
+  auto_review: true
+
+path_filters:
+  include:
+    - "src/**/*.java"
+    - "pom.xml"
+  exclude:
+    - "target/**"
+
+rules:
+  - security_issues
+  - bugs
+  - code_quality
+  - best_practices
