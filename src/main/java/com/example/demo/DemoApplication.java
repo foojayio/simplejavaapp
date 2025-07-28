@@ -10,4 +10,9 @@ public class DemoApplication {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 
+        public void unsafeMethod(String userInput) {
+                String query = "SELECT * FROM users WHERE name = '" + userInput + "'";
+                response.getWriter().println(userInput);
+        }
+
 }
