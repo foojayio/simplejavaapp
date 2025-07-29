@@ -10,4 +10,11 @@ public class DemoApplication {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 
+	public void addUsers(users) {
+		List<String> items = new ArrayList<>();
+		for (User user: users) {
+			items.add(user.getName());
+		}	
+	}	
+
 }
